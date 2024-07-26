@@ -43,3 +43,12 @@ web_loader = WebBaseLoader("Web URL")
 
 web_data = web_loader.load()
 print(web_data)
+
+#########################
+
+#Text loading
+from langchain_community.document_loaders import TextLoader # type: ignore
+
+text_loader = TextLoader("your_text.txt")
+text_data = text_loader.load()
+print(text_data)
